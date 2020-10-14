@@ -1,7 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap');
 $main-color: #A8C256;
+body{
+    padding: 0;
+    margin: 0;
+}
 .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #292D2B;
+    height: 3.5rem;
+    box-shadow: 0 3px 8px rgba($main-color,.5);
 
 }
 .header{ 
+    margin-left: .5rem;
     color: $main-color;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+ul, li{ 
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+a{
+    text-decoration: none;
+    color: $main-color;
+    padding: 1rem;
+    &:hover{
+        background-color:$main-color;
+        color: white;
+
+    }
+}
+.navigation{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
+}
+.link{
+    &:not(:first-child){
+        margin-left:1rem;
+    }
+    &:last-child{
+        margin-right:.7rem;
+    }
+}
+// .btn{
+//     &:hover{
+//         background-color:$main-color;
+        
+//     }
+//     & a:hover{
+//         color:white;
+//      }
+// }
+@media (max-width:454px){
+    .nav>*{
+        flex:100%;
+        width:100%;
+    }
+    .header{
+        flex:100%;
+    }
 }

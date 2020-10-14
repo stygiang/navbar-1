@@ -1,2 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap");
+body {
+  padding: 0;
+  margin: 0; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #292D2B;
+  height: 3.5rem;
+  box-shadow: 0 3px 8px rgba(168, 194, 86, 0.5); }
+
 .header {
-  color: #A8C256; }
+  margin-left: .5rem;
+  color: #A8C256;
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700; }
+
+ul, li {
+  list-style-type: none;
+  display: inline-block;
+  text-decoration: none; }
+
+a {
+  text-decoration: none;
+  color: #A8C256;
+  padding: 1rem; }
+  a:hover {
+    background-color: #A8C256;
+    color: white; }
+
+.navigation {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; }
+
+.link:not(:first-child) {
+  margin-left: 1rem; }
+
+.link:last-child {
+  margin-right: .7rem; }
+
+@media (max-width: 454px) {
+  .nav > * {
+    flex: 100%;
+    width: 100%; }
+  .header {
+    flex: 100%; } }
